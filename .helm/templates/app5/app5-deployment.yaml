@@ -6,6 +6,8 @@ metadata:
     io.kompose.service: app5
   name: app5
   namespace: {{ .Values.global.namespace | quote }}
+  annotations:
+    werf.io/weight: "5"
 spec:
   replicas: {{ .Values.app5.replicaCount }}
   selector:

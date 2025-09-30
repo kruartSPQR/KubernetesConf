@@ -5,7 +5,7 @@ redis:
   enabled: true
   name: "redis"
   annotations:
-    werf.io/weight: "-3"
+    werf.io/weight: "-15"
   DNS_name: "my-app-redis-master"
   architecture: "standalone"
   auth:
@@ -31,7 +31,7 @@ kafka:
     enabled: true
   name: "kafka"
   annotations:
-    werf.io/weight: "-3"
+    werf.io/weight: "-15"
   DNS_name: "my-app-kafka"
 
   auth:
